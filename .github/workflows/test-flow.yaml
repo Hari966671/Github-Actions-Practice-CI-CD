@@ -3,16 +3,16 @@ on :
   push :
     branches : [main]
 jobs :
-  commandjob2 :
-  runs-on : ubuntu-latest
-  steps:
-    - name : display ls -lrth
-      run : ls -lrth
+  commandjob2:
+    runs-on: ubuntu-latest
+    steps:
+      - name : display ls -lrth
+        run : ls -lrth
       
-    - name : plaing the data in log.txt
-      run : echo ""hareesh is good" > log.txt
+      - name : plaing the data in log.txt
+        run : echo ""hareesh is good" > log.txt
 
-    - name : display log.txt
-      run : cat log.txt
+      - name : display log.txt
+        run : cat log.txt
     
     
