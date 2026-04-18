@@ -1,1 +1,7 @@
-
+name : my-demo-workflow
+on : workflow_dispatch
+jobs :
+  commands :
+    runs-on : ubuntu-latest
+    steps:
+      - run : echo "welcome to git hub actions"
