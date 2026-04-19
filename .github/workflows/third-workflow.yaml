@@ -8,11 +8,13 @@ jobs:
     steps:
       - name: checkout the code
         uses: actions/checkout@v4
-  display:
-    needs: checkout
-    runs-on: ubuntu-latest
-    steps:
       - name: display the checkout success
         run: echo "build successed"
       - name: display the file info
         run: cat src/demo.py
+  display:
+    needs: checkout
+    runs-on: ubuntu-latest
+    steps:
+      - name : post checkout
+        run: echo "now checkout completed succesfully"
