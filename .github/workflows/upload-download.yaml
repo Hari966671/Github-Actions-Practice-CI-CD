@@ -1,0 +1,13 @@
+name: upload_download_artifactory
+on:
+  push:
+    branches: [main]
+env:
+  name: "Hari"
+  city: "Kuppam"
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: reading the variable 
+      run: "my name is $name"
