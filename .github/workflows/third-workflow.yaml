@@ -15,4 +15,4 @@ jobs:
       - name: display the checkout success
         run: echo "build successed"
       - name: display the file info
-        run: cat src.py
+        run: cat demo.py
