@@ -1,0 +1,16 @@
+name: new-workflow
+on:
+  push:
+    branches: [main]
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v6
+  display:
+    needs: checkout
+    runs-on: ubuntu-latest
+    steps:
+      - name: display the checkout success
+        run: echo "build successed"
