@@ -8,6 +8,25 @@ env:
 jobs:
   upload:
     runs-on: ubuntu-latest
-    steps: 
-    - name: reading the variable 
-      run: echo "my name is $name"
+    steps:
+     - run: |
+        echo "reading the variable" 
+        echo "my name is $name"
+        echo "this is githubaction course syllabus" > syllabus.txt
+        echo Upload file
+        uses: actions/upload-artifact@v4
+          with:
+            name: my-course
+            path: course/syllabus.txt
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "download the file"
+        uses: actions/download-artifact@v4
+        with:
+          name: my_course
+        run: echo "file downloaded"
+  
+  
+            
+            
