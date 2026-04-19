@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     - name: reading the variable 
-      run: "my name is $name"
+      run: echo "my name is $name"
