@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout the code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
   display:
     needs: checkout
     runs-on: ubuntu-latest
@@ -15,4 +15,4 @@ jobs:
       - name: display the checkout success
         run: echo "build successed"
       - name: display the file info
-        run: cat demo.py
+        run: cat src/demo.py
