@@ -1,7 +1,5 @@
 name: new-workflow
-on:
-  push:
-    branches: [main]
+on: workflow_dispatch
 jobs:
   checkout:
     runs-on: ubuntu-latest
