@@ -1,7 +1,5 @@
 name : my-test-flow
-on :
-  push :
-    branches : [main]
+on : workflow_dispatch
 jobs :
   commandjob2:
     runs-on: ubuntu-latest
