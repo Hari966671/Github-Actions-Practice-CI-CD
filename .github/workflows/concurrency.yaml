@@ -1,0 +1,16 @@
+name: concurrency_pract
+on: workflow_dispatch
+jobs:
+  concurrency:
+    runs-on: unbuntu-latest
+    concurrency:
+      group: my_group
+      cancel-in-progress: true
+    steps:
+      - name:
+        run: |
+          echo "hari is good boy"
+          sleep 600
+          
+        
+      
